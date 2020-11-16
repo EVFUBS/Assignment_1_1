@@ -1,0 +1,36 @@
+header{
+    grid-area: header;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+}
+
+nav{
+    grid-area: nav;
+    background-color: lightgrey;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightgrey;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color:white;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:"header header header"
+                        "nav main aside"
+                        "footer footer footer";
+}
