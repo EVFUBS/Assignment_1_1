@@ -37,14 +37,6 @@ nav ul:hover ul{
     display: block;
 }
 
-aside{
-    grid-area: aside;
-    background-color: lightgrey;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5em;
-}
-
 footer{
     grid-area: footer;
     background-color: black;
@@ -54,11 +46,10 @@ footer{
 body{
     margin: auto;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
     grid-template-areas:"header header header"
                         "nav nav nav"
-                        "main main aside"
+                        "main main main"
                         "footer footer footer";
-                        
 }

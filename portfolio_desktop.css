@@ -1,23 +1,33 @@
 header{
     grid-area: header;
     text-align: center;
-    background-color: black;
-    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5em;
 }
 
 main{
     grid-area: main;
     background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5em;
 }
 
 nav{
     grid-area: nav;
     background-color: lightgrey;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5em;
 }
 
 aside{
     grid-area: aside;
     background-color: lightgrey;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5em;
 }
 
 footer{
