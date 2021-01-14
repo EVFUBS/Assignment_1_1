@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <title>contact site</title>
-        <link rel="stylesheet" href="contact_style.css">
+        <link rel="stylesheet" href="contact_style.css" media="(min-width: 801px)">
+        <link rel="stylesheet" href="contact_mobile.css" media ="(max-width: 800px)">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
@@ -12,7 +13,7 @@
         </header>
 
         <main>
-            <p>Feel free to use the contact form for any questions or queries you may have</p>
+            <p>Feel free to use the contact form for any questions or queries you may have.</p>
 
             <form action="action" method="POST">
                 <label for="emailBox">Email:  </label>
@@ -26,16 +27,19 @@
 
         </main>
 
-        <nav>
+        <a class="shownav" href ="#clicked"></a>
+        <div id="notclicked"></div>
+
+        <nav id="clicked">
             <ul>
                 <li>Main menu</li>
                     <ul>
                         <li><a href="index.html">Index</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>     
                         <li><a href="cv.html">CV</a></li>
-                        <li><a href="sitereport.html">Report</a></li>   
+                        <li><a href="sitereport.html">Report</a></li>
+                        <li><a class="removenav" href="#notclicked">Close Menu</a></li>  
                     </ul>
-                
             </ul>
         </nav>
 

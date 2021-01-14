@@ -12,6 +12,7 @@ main{
     border-style: solid;
     border-color: black;
     border-width: 0.5em;
+    height: 76vh;
 }
 
 nav{
