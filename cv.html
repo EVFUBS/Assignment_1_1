@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <title>CV</title>
-        <link rel="stylesheet" href="cv_style.css">
+        <link rel="stylesheet" href="cv_style.css" media="(min-width: 801px)">
+        <link rel="stylesheet" href="cv_mobile.css" media ="(max-width: 800px)">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
@@ -75,14 +76,18 @@
             </ul>
         </aside>
 
-        <nav>
+        <a class="shownav" href ="#clicked"></a>
+        <div id="notclicked"></div>
+
+        <nav id="clicked">
             <ul>
                 <li>Main menu</li>
                     <ul>
                         <li><a href="index.html">Index</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>     
                         <li><a href="contact.html">Contact us</a></li>
-                        <li><a href="sitereport.html">Report</a></li>   
+                        <li><a href="sitereport.html">Report</a></li>
+                        <li><a class="removenav" href="#notclicked">Close Menu</a></li>  
                     </ul>
             </ul>
         </nav>

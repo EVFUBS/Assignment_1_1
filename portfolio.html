@@ -26,12 +26,19 @@
             <img src="placeholder.png" alt="image" width="500" height="500">
         </aside>
 
-        <nav>
+        <a class="shownav" href ="#clicked"></a>
+        <div id="notclicked"></div>
+
+        <nav id="clicked">
             <ul>
-                <li><a href="index.html">Index</a></li>
-                <li><a href="cv.html">CV</a></li>     
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="sitereport.html">Report</a></li>  
+                <li>Main menu</li>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="cv.html">CV</a></li>     
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="sitereport.html">Report</a></li>
+                        <li><a class="removenav" href="#notclicked">Close Menu</a></li>  
+                    </ul>
             </ul>
         </nav>
 

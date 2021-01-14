@@ -60,7 +60,6 @@ nav ul ul{
     display: none;
 }
 
-
 #clicked:target{
     display: block;
 }
@@ -86,8 +85,6 @@ body{
     grid-template-rows: auto;
     grid-template-areas:"burger header header"
                         "nav nav nav"
-                        "main main main"
-                        "aside aside aside"
+                        "main main aside"
                         "footer footer footer";
-                        
 }

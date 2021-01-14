@@ -38,30 +38,51 @@ section{
 nav{
     grid-area: nav;
     background-color: lightgrey;
-    position: relative;
-    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
 }
 nav ul{
-    list-style-type: none;
-    text-align: center;
     padding: 0;
     width: 100%;
-}
-nav ul ul{
-    list-style-type: none;
-    display: none;
     text-align: center;
-    position: relative;
-    z-index: 1;
-    padding: 0;
-    width: 100%;
-}
-nav ul:hover ul{
-    display: block;
+    list-style-type: none;
+    text-decoration: underline;
 }
 
-.removenav{
+nav ul ul{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.shownav {
+    grid-area: burger;
+    height: 10vh;
+    width: 8vw;
+    display: block;
+     border-top: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+    border-radius: 0.5em;
+    }
+
+.shownav:before {
+    content: '';
+        position: absolute;
+        width: 8vw;
+        top: 5vh;
+        border-top: 0.5em solid black;
+    }
+
+#clicked:not(:target){
     display: none;
+}
+
+#clicked:target{
+    display: block;
 }
 
 footer{
@@ -73,11 +94,12 @@ footer{
 body{
     margin: auto;
     display: grid;
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 10% 40% 50%;
     grid-template-rows: auto;
-    grid-template-areas:"header header header"
+    grid-template-areas:"burger header header"
                         "nav nav nav"
-                        "main main aside"
-                        "main main section"
+                        "main main main"
+                        "aside aside aside"
+                        "section section section"
                         "footer footer footer";
 }

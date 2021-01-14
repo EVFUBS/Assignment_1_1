@@ -22,6 +22,18 @@ nav{
     border-width: 0.5em;
 }
 
+nav ul{
+    list-style-type: none;
+    text-decoration: underline;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.removenav{
+    display: none;
+}
+
 aside{
     grid-area: aside;
     background-color: lightgrey;
