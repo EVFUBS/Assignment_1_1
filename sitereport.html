@@ -2,15 +2,85 @@
 <html lang="en">
     <head>
         <title>contact site</title>
-        <link rel="stylesheet" href="contactstyle.html">
+        <link rel="stylesheet" href="sitereport_desktop.css" media="(min-width: 801px)">
+        <link rel="stylesheet" href="sitereport_mobile.css" media ="(max-width: 800px)">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
     <body>
-        <header>Report</header>
+        <header>
+            <h1>Report</h1>
+        </header>
 
         <main>
-            <p>report here</p>
+            
+            <h2>Introduction</h2>
+
+            <p>In this report I will be covering what i have learned about html and css and how it has been applied to
+                this website.</p>
+
+            <h2>Development experience</h2>
+
+            <p>Overall my experience learning html and css and the basics of web development has been good. I did have a small amount
+                of prior experience with html from sixth form, however I was not overly familiar with it. The debugging of a website
+                is the part that I sometimes struggle with as it is still a little hard for me to spot mistakes too quickly. However
+                I think over time I have become more accustommed to reading and understanding html and css code as well as writing it.</p>
+
+            <h2>Website design</h2>
+
+            <p>website uses modern coventions when making website such as using grid area to design the layout of the website
+                which is a modern standard when creating a website.The website also uses multiple stylesheets for each page to suit both viewing on a 
+                computer or laptop and to suit viewing on a mobile device as the style changes to a more mobile friendly version with a hamburger menu button.</p>
+
+            <p>Proper tags have been used to layout the website using tags such as main, nav, aside, header, footer, etc.
+                These make the website more organised as well as easier for desktop narrators to understand as using tags like
+                main and nav can make it easier for them to interpret the website.</p>
+    
+            <h2>mobile site</h2>
+
+            <p>The website mobile versions have a hamburger icon. This icon is commonly used on mobile sites as a way to open
+                a side menu with the websites navigation as to not clutter the screen and making it a more viewable experience.
+                This is done on this website through target selectors that detect when a link is clicked and can change the style
+                of the website through CSS.</p>
+
+            <h2>Contact us page and forms</h2>
+
+            <p>The contact us website uses a form to create a submission box where you can enter details and a question. This is
+                supposed to simulate an actual contact us page. However, the form does not have the functionality of a contact form
+                as that would require javascript.</p>
+
+            <h2>keyframe animation</h2>
+
+            <p>A keyframe animation is used on this website to demonstrate how to move objects around the page using keyframes
+                to animate its movement and change its properties during the animation.</p>
+
+            
+            
+            
         </main>
+
+        <aside>
+            <div></div>
+        </aside>
+
+        <a class="shownav" href ="#clicked"></a>
+        <div id="notclicked"></div>
+
+        <nav id="clicked">
+            <ul>
+                <li>Main menu</li>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>     
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="sitereport.html">Report</a></li>
+                        <li><a class="removenav" href="#notclicked">Close Menu</a></li>  
+                    </ul>
+            </ul>
+        </nav>
+
+        <footer>
+            &copy; Luke Smith
+        </footer>
     </body>
 </html>
