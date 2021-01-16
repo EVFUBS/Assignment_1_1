@@ -89,7 +89,7 @@ aside div{
     width: 50px;
     background-color: black;
     animation-name: square;
-    animation-duration: 5s;
+    animation-duration: 20s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;

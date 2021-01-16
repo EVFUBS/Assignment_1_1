@@ -14,26 +14,6 @@ main{
     border-width: 0.5em;
 }
 
-main input{
-    margin: 1em;
-    box-sizing: border-box;
-    border: 0.2em solid black ;
-    border-radius: 0.1em;
-    display: block;
-}
-
-main textarea{
-    margin: 1em;
-    box-sizing: border-box;
-    border: 0.2em solid black ;
-    border-radius: 0.1em;
-    display: block;
-}
-
-input[type = radio]{
-    display: inline-block;
-}
-
 nav{
     grid-area: nav;
     background-color: lightgrey;
@@ -80,6 +60,7 @@ nav ul ul{
     display: none;
 }
 
+
 #clicked:target{
     display: block;
 }
@@ -98,5 +79,7 @@ body{
     grid-template-areas:"burger header header"
                         "nav nav nav"
                         "main main main"
+                        "aside aside aside"
                         "footer footer footer";
+                        
 }

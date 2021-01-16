@@ -12,7 +12,6 @@ main{
     border-style: solid;
     border-color: black;
     border-width: 0.5em;
-    height: 76vh;
 }
 
 nav{
@@ -46,14 +45,6 @@ nav ul:hover ul{
     display: none;
 }
 
-aside{
-    grid-area: aside;
-    background-color: lightgrey;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5em;
-}
-
 footer{
     grid-area: footer;
     background-color: black;
@@ -67,7 +58,7 @@ body{
     grid-template-rows: auto;
     grid-template-areas:"header header header"
                         "nav nav nav"
-                        "main main aside"
+                        "main main main"
                         "footer footer footer";
                         
 }

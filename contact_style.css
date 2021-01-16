@@ -16,7 +16,6 @@ main{
 }
 
 main input{
-    width: 100;
     margin: 1em;
     box-sizing: border-box;
     border: 0.2em solid black ;
@@ -25,7 +24,6 @@ main input{
 }
 
 main textarea{
-    width: 100;
     margin: 1em;
     box-sizing: border-box;
     border: 0.2em solid black ;
